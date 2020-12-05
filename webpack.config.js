@@ -16,6 +16,14 @@ module.exports = {
         filename: 'AngularJsProjectCommonTools.js',
         path: path.resolve(__dirname, 'dist')
     },
+    externals: {
+        angular: {
+            commonjs: 'angular',
+            commonjs2: 'angular',
+            amd: 'angular',
+            root: 'angular',
+        },
+    },
     module: {
     }
 };
